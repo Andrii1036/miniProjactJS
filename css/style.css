@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+}
+
+body {
+    background: url(../images/background.jpg) no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 60px 15px;
+}
+
+.moveBackground {
+    position: fixed;
+    top: -400px;
+    left: -120px;
+    width: 120%;
+    z-index: -1;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 1000px;
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+    border-radius: 15px;
+    border-top: 6px solid rgb(185, 66, 51);
+}
+
+.container_header,
+.container_footer {
+    display: flex;
+    border-bottom: 1px solid rgb(185, 66, 51);
+    height: 50px;
+    padding: 10px 15px;
+    justify-content: space-between;
+    background-color: rgb(223, 223, 223);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.container_counter {
+    font-size: 20px;
+    font-weight: 700;
+    background-color: rgb(185, 66, 51);
+    color: white;
+    border-radius: 5px;
+    padding: 0 10px;
+}
+
+.users {
+    display: flex;
+    padding: 10px 15px;
+    min-height: 50vh;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.user {
+    width: 200px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 5px;
+    justify-content: space-between;
+    box-shadow: rgba(17, 17, 63, 0.5) 0px 13px 27px -5px, rgba(121, 192, 7, 0.5) 0px 8px 16px -8px;
+    position: relative;
+    top: 0;
+    transition: all ease 0.5s;
+}
+
+.user:hover {
+    width: 220px;
+    height: 300px;
+    top: -10px;
+    transition: all ease 0.5s;
+}
+
+.user_photo {
+    background: url(../images/icon.jpg) no-repeat center;
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.user_title,
+.user_subTitle,
+.user_details {
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.user_subTitle {
+    font-size: 15px;
+}
+
+.user_details:hover {
+    text-decoration: underline;
+    color: rgb(47, 18, 75);
+    font-size: 22px;
+    transition: font-size 0.3s;
+}
+
+.container_footer {
+    border-bottom: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top: 1px solid rgb(185, 66, 51);
+    font-size: 14px;
+}
