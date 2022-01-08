@@ -131,6 +131,7 @@ a:hover {
     flex-direction: column;
     justify-content: space-between;
     width: 17%;
+    min-width: 170px;
     margin: 10px;
     position: relative;
     padding-left: 30px;

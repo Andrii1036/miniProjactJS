@@ -1,4 +1,6 @@
 let userInfo = JSON.parse(new URL(location.href).searchParams.get('data'));
+let userURL = location.href;
+localStorage.setItem('backUrl', userURL);
 let userId = userInfo.id;
 let postsEndpoint = `https://jsonplaceholder.typicode.com/users/${userId}/posts`
 let userPhoto = document.getElementById('photo');
