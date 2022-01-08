@@ -5,11 +5,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mini roject JS</title>
+    <link rel="stylesheet" href="css/user-details.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    hello
+    <div class="navigation">
+        <a href="index.html">&#8656 На попередню сторінку</a>
+    </div>
+    <div class="user">
+        <h2 class="user_title"></h2>
+        <div class="user_wrapper">
+            <div class="user_photo">
+                <div class="photo" id="photo"></div>
+            </div>
+            <div class="user_info">
+                <div class="user_contacts">
+                    <h2 class="user_contacts-userName"></h2>
+                    <a href="" class="user_contacts-email"></a>
+                    <a href="" class="user_contacts-phone"></a>
+                    <a href="" class="user_contacts-web"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="user_button">post of current user</button>
+    <div class="posts"></div>
+
+
+    <script src="js/user-details.js"></script>
 </body>
 
 </html>

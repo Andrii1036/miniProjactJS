@@ -37,7 +37,7 @@ function createUserCard(user) {
     userId.className = 'user_subTitle';
     linkTxt.className = 'user_details';
 
-    detailsLink.href = `user-details.html?data${JSON.stringify(user)}`
+    detailsLink.href = `user-details.html?data=${JSON.stringify(user)}`
 
     userName.innerText = `${user.name}`;
     userId.innerText = `ID : ${user.id}`;
